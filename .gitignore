@@ -3,3 +3,5 @@
 target
 src/test/
 spring-boot-security-oauth2-example.iml
+/.classpath
+/.project

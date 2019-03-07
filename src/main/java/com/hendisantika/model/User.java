@@ -17,12 +17,12 @@ import javax.persistence.*;
  */
 
 @Data
-@Entity
+@Entity(name="User1")
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
     @Column
     private String username;
@@ -32,7 +32,7 @@ public class User {
     private String password;
 
     @Column
-    private long salary;
+    private int salary;
 
     @Column
     private int age;
